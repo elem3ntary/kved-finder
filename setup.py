@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     install_requires=['requests'],
     name="kved_finder",
-    version="v2.4",
+    version="v2.6",
     author="elem3ntary",
     author_email="impr0digg@gmai.com",
     description="A package for finding kved tree",
