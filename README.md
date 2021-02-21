@@ -3,12 +3,30 @@
 A tool that allows you to find a kved tree for the specific kved.
 
 ## Usage
+<br>
+
+### Run from terminal
+```bash
+python3 main.py <kved>
+```
+The results will be saved to kved_result.json
+<hr>
+<br>
+
+### Install package
 
 ```bash
-python3 main.py 01.11
+pip install kved_finder
 ```
-The result will be saved to kved_result.json
-Example output
+```python3
+import kved_finder
+result = kved_finder.parse_kved('0.01')
+```
+
+## Example
+
+
+Example output for kved 01.11
 ```json
 {
   "name": "Вирощування зернових культур (крім рису), бобових культур і насіння олійних культур",

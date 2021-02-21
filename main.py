@@ -65,12 +65,14 @@ def parse_kved(classCode: str):
             }
         }
     }
-    with open('kved_result.json', 'w') as file:
-        json.dump(result, file, indent=2, ensure_ascii=False)
+    return result
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('kved', help='kved you want to find (example: 01.11)', type=str)
     args = parser.parse_args()
-    parse_kved(args.kved)
+
+    result = parse_kved(args.kved)
+    with open('kved_result.json', 'w') as file:
+        json.dump(result, file, indent=2, ensure_ascii=False)
