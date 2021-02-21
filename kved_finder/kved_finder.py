@@ -83,15 +83,17 @@ if __name__ == '__main__':
     parser.add_argument('-s', '--source_file', help='Where your kved.json is located', type=str, action='store')
     parser.add_argument('-d', '--destination_file',
                         help='Where should the results be written to', type=str, action="store")
-    args = parser.parse_args()
+    args = vars(parser.parse_args())
 
     kved_obj = None
-    if args.s:
-        kved_obj = read_file(args.s)
+    if args['source_file']:
+        kved_obj = read_file(args['source_file'])
+
+    result = parse_kved(args['kved'], kved_obj)
 
     destination_file = 'kved_result.json'
-    if args.d:
-        destination_file = args.d
-    result = parse_kved(args.kved)
+    if args['destination_file']:
+        destination_file = args['destination_file']
+
     with open(destination_file, 'w') as file:
         json.dump(result, file, indent=2, ensure_ascii=False)
