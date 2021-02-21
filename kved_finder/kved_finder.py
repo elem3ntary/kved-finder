@@ -27,7 +27,7 @@ def find(func, values):
             return value
 
 
-def parse_kved(classCode: str, kved_obj):
+def parse_kved(classCode: str, kved_obj=None):
     '''
     Parses kved tree and writes results to kved_result.json
     '''
