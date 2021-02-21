@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="kved_finder-elem3ntary",
-    version="v1.2",
+    name="kved_finder",
+    version="v1.3",
     author="elem3ntary",
     author_email="impr0digg@gmai.com",
     description="A package for finding kved tree",
