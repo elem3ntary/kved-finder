@@ -3,7 +3,6 @@
 A tool that allows you to find a kved tree for the specific kved.
 
 ## Usage
-<br>
 
 ### Run from terminal
 ```bash
@@ -11,7 +10,6 @@ python3 main.py <kved>
 ```
 The results will be saved to kved_result.json
 <hr>
-<br>
 
 ### Install package
 
