@@ -1,12 +1,14 @@
 import json
 import argparse
+import os.path
 
 
 def read_file(file_path='kved.json') -> dict:
     '''
     Reads json file and returns it parsed
     '''
-    with open(file_path) as f:
+    current_dir = os.path.dirname(__file__)
+    with open(os.path.join(current_dir, file_path)) as f:
         return json.load(f)
 
 

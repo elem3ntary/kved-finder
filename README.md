@@ -2,23 +2,26 @@
 
 A tool that allows you to find a kved tree for the specific kved.
 
-## Usage
-
-### Run from terminal
-```bash
-python3 main.py <kved>
-```
-The results will be saved to kved_result.json
-<hr>
-
-### Install package
+## Installation
 
 ```bash
 pip install kved_finder
 ```
+
+## Usage
+
+### Run from terminal
+```bash
+python3 -m kved_finder <kved>
+```
+The results will be saved to kved_result.json
+<hr>
+
+### Import as package
+
 ```python3
 import kved_finder
-result = kved_finder.parse_kved('0.01')
+result = kved_finder.parse_kved('01.11')
 ```
 
 ## Example
