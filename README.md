@@ -12,7 +12,7 @@ pip install kved_finder
 
 ### Run from terminal
 ```bash
-python3 -m kved_finder <kved>
+python3 -m kved_finder.kved_finder <kved>
 ```
 The results will be saved to kved_result.json
 <hr>
@@ -20,7 +20,7 @@ The results will be saved to kved_result.json
 ### Import as package
 
 ```python3
-import kved_finder
+from kved_finder import kved_finder
 result = kved_finder.parse_kved('01.11')
 ```
 

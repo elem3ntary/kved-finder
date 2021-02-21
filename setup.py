@@ -4,6 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
+    install_requires=['requests'],
     name="kved_finder",
     version="v2.4",
     author="elem3ntary",
@@ -17,6 +18,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    packages=['kved_finder'],
+    packages=setuptools.find_packages(),
     python_requires='>=3.7',
 )
