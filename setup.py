@@ -17,9 +17,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_data={
-        'static': ['kved_finder/static/*']
-    },
-    packages=setuptools.find_packages(),
+    include_package_data=True,
+    packages=['.', 'kved_finder'],
     python_requires='>=3.7',
 )
