@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="kved_finder-elem3ntary",  # Replace with your own username
+    name="kved_finder",
     version="0.0.1",
     author="elem3ntary",
     author_email="impr0digg@gmai.com",
