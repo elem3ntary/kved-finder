@@ -3,7 +3,7 @@ import argparse
 import os.path
 
 
-def read_file(file_path='kved.json') -> dict:
+def read_file(file_path='static/kved.json') -> dict:
     '''
     Reads json file and returns it parsed
     '''
